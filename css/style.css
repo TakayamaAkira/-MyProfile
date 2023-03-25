@@ -1,0 +1,357 @@
+/* PC、スマホ共通スタイル */
+body {
+  background-color: #e5e5e5;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  color: #000000;
+  font-size: 18px;
+}
+
+/* ====================
+    PC用のスタイル
+    ==================== */
+@media screen and (min-width: 768px) {
+  /* bodyのスタイル */
+  body {
+    margin: 0 auto 0 auto;
+  }
+
+  #body-div {
+    max-width: 960px;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ナビゲーション */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 960px;
+    min-width: 375px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  #nav > div > a:hover {
+    text-decoration: underline 2px #000000;
+  }
+
+  #nav > div > a:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-a1 {
+    border: solid 1px #000000;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+
+  .nav-a2 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* articleのスタイル */
+  /* メインビジュアルのスタイル */
+  #main-visual-div {
+    height: 400px;
+    margin: 0 auto 0 auto;
+  }
+
+  #main-visual {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Aboutのスタイル */
+  #about-section {
+    padding: 50px 20px 30px 20px;
+  }
+
+  #about-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-photo {
+    border-radius: 50%;
+    height: 141px;
+    width: 142px;
+  }
+
+  #about-div-right {
+    margin-left: 33px;
+    height: 141px;
+  }
+
+  .about-ul {
+    margin-left: 33px;  
+    padding: 0;
+  }
+
+  .about-ul > li {
+    margin-left: -5px;
+    font-weight: 400;
+  }
+
+  .body-h2 {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .body-h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  #about-div-right > ul {
+    margin-top: 0;
+  }
+
+  /* Worksのスタイル */
+  #works-section {
+    margin-top: 44px;
+    background-color: #FFFFFF
+  }
+
+  #works-div {
+    display: flex;
+    margin: 29px 193px 0 193px;
+  }
+
+  #works-div > div {
+    width: 179px;
+  }
+
+  #works-div > div > img {
+    width: 100%;
+  }
+
+  #works-center {
+    padding: 0 18px 0 18px;
+  }
+
+  .body-h2 {
+    margin: 0 auto 0 auto;
+  }
+
+  #works-div > div > p {
+    text-align: center;
+    margin: 27px auto 0 auto;
+  }
+  
+  #works-div > div > img:hover {
+    transform: scale(2.5, 2.5);
+  }
+
+  /* footerのスタイル */
+  footer {
+    text-align: center;
+    padding: 32px 0 17px 0;
+  }
+
+  #copyright-span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
+
+/* ====================
+    タブレットとスマホ用のスタイル
+    ==================== */
+@media screen and (max-width: 767px) {
+  /* bodyのスタイル */
+  body {
+    max-width: 767px;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+    font-size: 18px;
+  }
+
+  /* ナビゲーションのスタイル */
+  #nav > div > a {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 700;
+  }
+
+  #nav > div a {
+    text-decoration: none;
+  }
+
+  .nav-a1 {
+    border: solid 1px #000000;
+    padding: 0 20px;
+  }
+
+  .nav-a2 {
+    padding-right: 20px;
+  }
+
+  .nav-a3 {
+    margin-right: 20px;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 767px;
+    flex-wrap: wrap;
+  }
+
+  #nav > div > a:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  #nav > div > a:hover {
+    text-decoration: underline 2px #000000;
+  }
+
+  /* メインビジュアルのスタイル */
+  #main-visual-div {
+    max-height: 400px;
+    max-width: 767px;
+    margin: 0 auto 0 auto;
+  }
+
+  #main-visual {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Aboutのスタイル */
+  .body-h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  .body-h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 24px 0 0 0;
+  }
+
+  .about-ul > li {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  #about-div-left {
+    width: 141px;
+    height: 142px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+
+  #about-photo {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #about-section {
+    padding:120px 20px 120px 20px;
+  }
+
+  #about-content {
+    margin-top: 42px;
+    padding-bottom: 0;
+  }
+
+  #about-div-right {
+    max-width: 767px;
+    margin: 0 auto 0 auto;
+  }
+
+  #about-div-right > h3 {
+    margin: 0;
+  }
+
+  #about-ul {
+    margin-top: 0;
+  }
+
+  #about-ul-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Worksのスタイル */
+  #works-section {
+    margin: 45px auto 0 auto 0;
+    padding: 0 20px;
+  }
+
+  #works-div > div {
+    max-width: 647px;
+    margin: 0 auto 0 auto;
+  }
+
+  #works-div > div > img {
+    width: 100%;
+  }
+
+  #works-div > div > p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 auto 26px auto;
+  }
+
+  #works-div {
+    margin-top: 29.51px;
+  }
+
+  /* footerのスタイル */
+  #copyright-span {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  /* ====================
+    スマホ用（width: 549以下）のスタイル
+    ==================== */
+  @media screen and (max-width: 549px) {
+    /* ナビゲーション */
+    #nav {
+      max-width: 549px;
+      margin: 40px auto 20px auto;
+      display: block;
+      text-align: center;
+    }
+
+    #nav-right {
+      padding-top: 20px;
+    }
+
+    .nav-a3 {
+      padding-left: 20px;
+    }
+
+    /* メインビジュアル */
+    #main-visual-div {
+      margin-bottom: 200px;
+    }
+  }
+}
